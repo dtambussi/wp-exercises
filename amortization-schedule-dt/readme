@@ -1,0 +1,13 @@
+To run the project just run main class com.exercise.Application as java application (Java 8).
+
+How to run spring boot applications: https://howtoprogram.xyz/2016/10/11/run-spring-boot-application/
+
+Demo curl requests
+==================
+
+curl -X POST  -H "Accept: Application/json" -H "Content-Type: application/json" http://localhost:8080/amortizationScheduleRequest -d '{ "loanAmount":100000,"termInMonths":24, "periodicInterest": [{"monthCount": 12, "interestPercentage": 12.0}, {"monthCount": 12, "interestPercentage": 10.0}] }'
+
+curl -X POST  -H "Accept: Application/json" -H "Content-Type: application/json" http://localhost:8080/amortizationScheduleRequest -d '{ "loanAmount":10000,"termInMonths":12, "periodicInterest": [{"monthCount": 12, "interestPercentage": 7}] }'
+
+Output json can be displayed as HTML using a site such as: visualizer.json2html.com
+
