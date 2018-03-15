@@ -17,7 +17,6 @@ import com.exercise.model.PeriodicInterestRate;
 public class AmortizationScheduleGenerator {
 	
 	public AmortizationSchedule generateAmortizationSchedule(final AmortizationScheduleParameters params) {
-		// deeper implementation beyond exercise should validate params (loan > 0, interest rates > 0, etc)
 		final AmortizationSchedule schedule = AmortizationSchedule.builder()
 				.parameters(params)
 				.payments(new ArrayList<>())
